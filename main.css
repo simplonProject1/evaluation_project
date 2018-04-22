@@ -1,19 +1,38 @@
-section * {
-	margin: 0;
-	padding: 0;
+body {
+	background-color: #f7f7f7;
+	font-family: 'Maven Pro', sans-serif;
 }
 
-#calendar {
+section#calendar * {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+	display: flex;
+} 
+
+section#calendar {
+	border-radius: 50px;
 	width: 1200px;
 	margin: auto;
-	border: 3px solid black;
 	display: flex;
 	flex-direction: column;
+
 }
 
+#calen {
+		background-color: #f7f7f7;
+		border-radius: 50px;
+		box-shadow: 1px 1px 12px #777777;
+}
+
+
 #monthDescription {
+	background-color: #e8e8e8;
+	z-index: 100;
+	border-radius: 50px 50px 0px 0px;
 	padding: 20px;
-	border-bottom: 3px solid black;
 	display: flex;
 	justify-content: center;
 }
@@ -26,37 +45,103 @@ section * {
 	width: 50%;
 }
 
-img {
+#calendar img {
+	z-index: -100;
 	width: 100%;
 	height: 100%;
 }
 
+#currentMonth {
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 40px;
+}
+#prvMonth {
+	width: 90px;
+	height: 30px;
+	border-radius: 10px;
+	color: white;
+	margin-right: 100px;
+	background:  #E80041;
+}
+
+#nxtMonth {
+	width: 90px;
+	height: 30px;
+	border-radius: 10px;
+	color: white;
+	margin-left: 100px;
+	background:  #E80041;
+
+}
+
+#description {
+	font-size: 25px; 
+}
 .week {
+	background-color: #f7f7f7;
 	display: flex;
 	justify-content: center;
 }
 
 .week div {
+	border-radius: 15px;
+	color: white;
+	box-shadow: 1px 1px 12px #777777;
+	background:  #777777;
 	width: 100px;
 	height: 100px;
-	border: 5px solid black;
 	margin: 5px;
 	text-align: center;
 }
 
+#divCurrentDay {
+	border-radius: 15px;
+	color: white;
+	box-shadow: 1px 1px 12px #777777;
+	background:  #E80041;
+	text-align: center;
+}
 #currentWeek {
 	display: none;
 }
 
+#prvWeek {
+	margin-top: 2px;
+	box-shadow: 1px 1px 12px #777777;
+	width: 103px;
+	height: 103px;
+	border-radius: 20px;
+	color: white;
+	margin-right: 20px;
+	background:  #E80041;
+}
+
+
+#prvMonth, #nxtMonth {
+    display: none;
+}
+
+#currentMonth {
+    cursor: pointer;
+}
+
+#nxtWeek {
+	margin-top: 2px;
+	box-shadow: 1px 1px 12px #777777;
+	width: 103px;
+	height: 103px;
+	border-radius: 20px;
+	color: white;
+	margin-left: 20px;
+	background:  #E80041;
+}
 #calendarDisplayd {
+	border-radius: 0px 0px 50px 50px;
+	background-color: #f7f7f7;
 	display: flex;
 	justify-content: center;
 }
 
-#divCurrentDay {
-	background: orange;
-}
-
-#prvMonth, #nxtMonth {
-	display: none;
+#flux {
+	width: 30%;
 }
