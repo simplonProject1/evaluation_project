@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>evaluation project</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section id="calendar">
+		<div id="monthDescription">
+			<button id="prvMonth">previous</button>
+			<div id="currentMonth"></div>
+			<button id="nxtMonth">next</button>
+		</div>
+		<div id="dayDetails">
+			<div id="details">
+				<div id="photo">
+					<img id="currentPhoto" src="">
+				</div>
+				<div id="descrtiption">
+					STARTING TIME:<span id="startingTime"></span><br>
+					ENDING TIME:<span id="endingTime"></span><br>
+					TITLE:<span id="title"></span><br>
+					DESCRIPTION:<span id="eventDescription"></span><br>
+					PLACE:<span id="place"></span><br>
+				</div>
+			</div>
+		</div>
+		<div id="calendarDisplayd">
+			<button id="prvWeek">previous</button>
+			<div id="month"></div>
+			<div id="currentWeek" class="week weekToCopy">
+				<div class="day0 oneDay"><p class="nameOfDay">Sunday</p><br><p class="dayNumber"></p></div>
+				<div class="day1 oneDay"><p class="nameOfDay">Monday</p><br><p class="dayNumber"></p></div>
+				<div class="day2 oneDay"><p class="nameOfDay">Tuesday</p><br><p class="dayNumber"></p></div>
+				<div class="day3 oneDay"><p class="nameOfDay">Wednesday</p><br><p class="dayNumber"></p><br></div>
+				<div class="day4 oneDay"><p class="nameOfDay">Thursday</p><br><p class="dayNumber"></p><br></div>
+				<div class="day5 oneDay"><p class="nameOfDay">Friday</p><br><p class="dayNumber"></p></div>
+				<div class="day6 oneDay"><p class="nameOfDay">Saturday</p><br><p class="dayNumber"></p></div>
+			</div>
+			<button id="nxtWeek">next</button>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
